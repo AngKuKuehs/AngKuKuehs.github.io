@@ -1,0 +1,138 @@
+html {
+    background-color: black;
+    color: Pink;
+    text-align: center;
+    font-family: Oswald;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    font-size: xx-large;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.desc {
+    grid-column: 4;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 30vw 40vw 30vw;
+    grid-template-rows: auto;
+}
+
+nav {
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none
+}
+
+.n1 {
+    grid-column: 1;
+    grid-row: 2;
+    padding-bottom: 20px;
+    color:pink;
+    text-decoration: none
+}
+
+.n2 {
+    grid-column: 2;
+    grid-row: 2;
+    padding-bottom: 20px;
+    color: pink;
+    text-decoration: none
+}
+
+.n3 {
+    grid-column: 3;
+    grid-row: 2;
+    padding-bottom: 20px;
+    color:pink;
+    text-decoration: none
+}
+
+main {
+    grid-column: 2;
+    grid-row: 4;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
+.i1 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.i2 {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.edu {
+    grid-column: 1;
+    grid-row: 5;
+    color:pink;
+    text-decoration: none;
+    padding-top: 400px;
+}
+
+.exp{
+    grid-column: 2;
+    grid-row: 5;
+    color:pink;
+    text-decoration: none;
+    padding-top: 400px;
+}
+
+.int{
+    grid-column: 3;
+    grid-row: 5;
+    color:pink;
+    text-decoration: none;
+    padding-top: 400px;
+}
+
+.contactinfo{
+    font-size: xx-large;
+    color:pink;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        grid-template-columns: 20px auto 20px;
+        grid-template-rows: auto;
+        gap: 0;
+        margin: 0;
+      }
+
+    .n1{
+        display: none
+    }
+
+    .n2{
+        display: none
+    }
+
+    .n3{
+        display: none
+    }
+
+    nav{grid-column: 2;
+        grid-row: 2;
+        display: fixed;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
